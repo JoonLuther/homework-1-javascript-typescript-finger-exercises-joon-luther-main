@@ -1,0 +1,25 @@
+Comments:
+
+problem_js.js:
+Problem 2.1:  use commas to describe the inputs for clarity:  “array of co2_record, the names of two countries, and a year”
+Problem 6: include transaction() in module.exports for proper testing  
+Module.exports need to include function Transaction 
+Module.export needs to remove nonexistent functions (i.e arrayToList) not included in the problem set 
+
+
+problems_test.js.js:
+Remove Problem 1, 3, 5, 7, 8, 9 test cases because these problems are not included
+Line 5 problems_test.js.js 
+Change from: 
+const hw2 = require('./hw2');
+Change to: 
+const hw2 = require('./problems_js.js');
+So that the test can run without error. Before it says module ‘hw2’ not found. 
+
+problem_ts.ts:
+Use module.exports instead of exporting each function because file doesn’t compile otherwise 
+Problem 8: description says 40% of time results in success but 70% results in longer wait time. 40 + 70 does not equal 100. Change 70 to 60. 
+Problem 9: maybe we should use `https://restcountries.com/v3.1/name/${country}?fullText=true` to retrieve a country because  `https://restcountries.com/v3.1/name/${country}` returns multiple countries with that same common name (for example, country = china returns objects of hongkong and taiwan as well). 
+
+problems_ts.test.ts:
+Provide student with testing framework similar to problems_test.js.js (we weren’t given this) 
